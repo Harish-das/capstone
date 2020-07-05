@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Harish/Utility</title>
+        <meta name="keywords" content="footer, address, phone, icons" />
+        <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+        <link rel="stylesheet" href="../CSS/navbar.css">
+        <link rel="stylesheet" href="../CSS/gallery.css">
+        <link href='https://fonts.googleapis.com/css?family=Raleway:400,700|Merriweather' rel='stylesheet' type='text/css'>
+        <!--footer-->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+          <link rel="stylesheet" href="../CSS/footer.css">
+          <link rel="stylesheet" href="../CSS/utility.css">
+          <script src="../JAVASCRIPT/utility.js"></script>         
+
+	</head>
+	<body>
+
+
+    <header class="clearfix">
+        <div class="container">
+		    	<div class="header-left">
+			    	<h1 style="font-size: large;"><i class="fa fa-github-alt"></i>Harish.github.io<i class="fa fa-github-alt"></i></h1>
+			    </div>
+			    <div class="header-right">
+				    <label for="open">
+					    <span class="hidden-desktop"></span>
+				    </label>
+				    <input type="checkbox" name="" id="open">
+				    <nav>
+					    <a href="../index.html"><i class="fa fa-home fa-2x"></i>Home</a>
+					    <a href="youtube.html"><i class="fa fa-youtube-square fa-2x"></i>Youtube</a>
+					    <a href="#" id="active"><i class="fa fa-book fa-2x"></i>Utility</a>
+					    <a href="aboutme.html"><i class="fa fa-cog fa-2x"></i>Admin</a>
+				    </nav>
+			    </div>
+		</div>
+	</header>
+    <section class="clearfix">
+	    	<div class="container">
+		    	<div class="section-left">
+			    	<h1 class="section-title"><i class="fa fa-joomla fa-spin"></i> <i class="fa fa-cog fa-spin"></i> Utility  <i class="fa fa-cog fa-spin"></i> <i class="fa fa-joomla fa-spin"></i></h1>
+			    	<h5 class="section-tagline">Zodiac Sign || BMI Calculator || Google Calender</h5>
+			    </div>
+			    
+		    </div>
+	</section>
+
+<h1 style="font-family: 'Raleway', sans-serif;"><span id="hover"></span></h1>
+<p style="font-family: sans-serif; color: #fff; padding-left: 10px;"><a href="www.jacobstone.co.uk" style="color:#efefef; text-decoration: none;"></a></p>
+<br>
+
+
+
+<div class="container">
+  <div class="row">
+      <div class="col-lg-6 col-sm-12">
+          <div class="txt2">ZODIAC SIGN</div>    
+             <div class="k"> <br>                      
+                  <h2 id='txt'>Here it will display the Zodiac sign</h2>
+                      <form action='#' method='post'>
+                      <p style="color: bisque; text-align: center; font-size: medium;">Select the day and month, then click the button.</p>
+                      Day: <select id='s_days'><option value='1'>1</option><option value='2'>2</option><option value='3'>3</option><option value='4'>4</option><option value='5'>5</option><option value='6'>6</option><option value='7'>7</option><option value='8'>8</option><option value='9'>9</option><option value='10'>10</option><option value='11'>11</option><option value='12'>12</option><option value='13'>13</option><option value='14'>14</option><option value='15'>15</option><option value='16'>16</option><option value='17'>17</option><option value='18'>18</option><option value='19'>19</option><option value='20'>20</option><option value='21'>21</option><option value='22'>22</option><option value='23'>23</option><option value='24'>24</option><option value='25'>25</option><option value='26'>26</option><option value='27'>27</option><option value='28'>28</option><option value='29'>29</option><option value='30'>30</option><option value='31'>31</option></select>
+                      Month:<select id='s_m'><option value='1'>January</option><option value='2'>February</option><option value='3'>March</option><option value='4'>April</option><option value='5'>May</option><option value='6'>June</option><option value='7'>July</option><option value='8'>August</option><option value='9'>September</option><option value='10'>October</option><option value='11'>November</option><option value='12'>December</option></select>
+                   <br><br><button type="button" id='test_z' class="test_z" onclick="zodiac(day,month)"><b style="font-size: medium;">Click on It</b></button>
+                      </form><br>
+                      <script>
+                          function zodiac(day, month){
+                          var zodiac =['', 'Capricorn(ମକର ରାଶି ) &#9809;', 'Aquarius(କୁମ୍ଭ) &#9810;', 'Pisces( ମୀନ )&#9811;', 'Aries(ମେଷ) &#9800;', 'Taurus(ବୃଷ) &#9801;', 'Gemini(mithun) &#9802;', 'Cancer(କର୍କଟ)&#9803;', 'Leo(ତୁଳା) &#9804;', 'Virgo(kanya) &#9805;', 'Libra(ତୁଳା) &#9806;', 'Scorpio(ବିଛା) &#9807;', 'Sagittarius(kumbha) &#9808;', 'Capricorn(ମକର) &#9809;'];
+                          var last_day =['', 19, 18, 20, 20, 21, 21, 22, 22, 21, 22, 21, 20, 19];
+                          return (day > last_day[month]) ? zodiac[month*1 + 1] : zodiac[month];
+                          }
+                          document.getElementById('test_z').onclick = function(){
+                          document.getElementById('txt').innerHTML = zodiac(document.getElementById('s_days').value, document.getElementById('s_m').value);
+                          }
+                      </script>
+          </div>
+              <br>
+
+          <iframe src="https://calendar.google.com/calendar/embed?src=tubrfv35gdgflmqv7ij6ng9qq0%40group.calendar.google.com&ctz=Asia%2FKolkata" style="border: 0" width=100% height="250" frameborder="0" scrolling="no"></iframe>
+      </div>
+      <div class="col-lg-6 col-sm-12">
+           <!-- this is for bmi calculator-->
+          <div class="txt2">BMI CALCULATOR</div>
+          <div class="k">
+              <form name="bmiForm">
+                <br>
+              <p class="g">Your Weight(kg):<span><input type="text" name="weight" size="10"></span></p>
+              <p class="g"> Your Height(cm):<span><input type="text" name="height" size="10"></span></p><br />
+              <button type="button" id='test_b' class="test_z" onclick="calculateBmi()"><b style="font-size: medium;">BMI Calculate</b></button><br/><br/>
+              <p class="g">&nbsp; Your BMI :<span><input type="text" name="bmi" size="25"></span></p>
+              <p class="g">  This Means:<span><input type="text" name="meaning" size="25"></span></p><br />
+              <button type="reset" class='test_z' ><b style="font-size: medium;">RESET</b></button><br></form><br>
+          </div>
+      </div>
+      </div>
+  </div>
+
+
+
+
+
+
+
+
+
+<!--FOOTER-->
+
+<footer class="footer-distributed">
+  <div class="footer-left">
+
+    <h3>Uti<span>lity</span></h3>
+
+    <p class="footer-links">
+      <a href="../index.html">Home</a>
+      |
+      <a href="youtube.html"><i class="fa fa-youtube-square"></i> Youtube</a>
+      |
+      <a href="#">Utility</a>
+      |
+      <a href="aboutme.html">About Admin</a>
+    </p>
+
+    <p class="footer-company-name">webdevtrick &copy; 2019</p>
+  </div>
+
+  <div class="footer-center">
+
+    <div>
+      <i class="fa fa-map-marker fa-2x"></i>
+      <p><span>SMIT,MAJITAR</span>Sikkim, India</p>
+    </div>
+
+    <div>
+      <i class="fa fa-phone fa-2x"></i>
+      <p>+91 84568502**</p>
+    </div>
+
+    <div>
+      <i class="fa fa-envelope fa-2x"></i>
+      <p><a href="mailto:support@company.com">harishdas7***@gmail.com</a></p>
+    </div>
+
+  </div>
+
+  <div class="footer-right">
+
+    <p class="footer-company-about">
+      <span>Harish Chandra Das</span>
+      I am a Student. I have given My best to did this Responsive Website &amp; Following are my Social Media Link.
+    </p>
+
+    <div class="footer-icons">
+
+      <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+      <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+      <a href="#"><i class="fa fa-instagram fa-2x"></i></a>
+      <a href="#"><i class="fa fa-youtube fa-2x"></i></a>
+
+    </div>
+
+  </div>
+</footer>
+
+</body>
+</html>

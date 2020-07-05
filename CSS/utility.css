@@ -1,0 +1,52 @@
+.k{
+    border-radius: 25px;
+    border: 2px dotted rgb(223, 241, 62);
+    text-align: center;
+    
+    }
+    a{
+        text-decoration: none;
+        color: aliceblue;
+    }
+    #txt{
+        color: aliceblue;
+        text-align: center;
+        font-style: oblique;
+        font: bold;
+        font-size: 30px;
+    }
+    .txt2{
+        color: rgb(87, 255, 213);
+        text-align: center;
+        font-style: oblique;
+        font-size: 30px;
+        font: bold;
+        border-radius: 25px;
+    border: 2px dotted rgb(217, 255, 0);
+    font-family: monospace;
+    }
+    .test_z{
+        border-radius: 15px;
+        border:rgb(219, 35, 35) 2px solid;
+        box-shadow: aquamarine;
+        background-color: cornflowerblue;
+        background-image: -webkit-linear-gradient(#80059E 0%, #550486 100%);
+        text-align: center;
+        color: azure;
+        padding: 1%;
+    }
+    .test_z:hover{
+        background-color: #3ff7c9;
+    }
+    .g{
+        color:rgb(187, 255, 60);
+        
+        font: bolder;
+        font-size:large;
+    }
+    span{
+        color: black;
+    }
+select{
+    font-size: large;
+}
